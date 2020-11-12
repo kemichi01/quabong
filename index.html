@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+    let jmgObj = null;
+    jmgObj = document.getElementById('myImage');
+    function init() {
+        jmgObj = document.getElementById('myImage');
+        jmgObj.style.position = 'relative';
+        jmgObj.style.top = '0px';
+    }
+    function movebotton() {
+        jmgObj.style.top = parseInt(jmgObj.style.top) + 10 +'px'
+    }
+    window.onload = init;
+</script>
+</head>
+<body>
+<form>
+    <img width="199" id="myImage" src="qualao.jpg" />
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="Click Me" onclick="movebotton()" />
+</form>
+</body>
+</html>
